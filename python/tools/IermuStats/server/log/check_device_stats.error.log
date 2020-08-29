@@ -1,0 +1,85 @@
+2018-11-04 10:10:33,382 - ERROR : ('Connection aborted.', error(10061, ''))
+Traceback (most recent call last):
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 48, in <module>
+    iermu_stat(limit)
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 14, in iermu_stat
+    data = requests.get(url,params={"limit": limit})
+  File "C:\Python27\lib\site-packages\requests\api.py", line 69, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(10061, ''))
+2018-11-04 10:16:50,513 - ERROR : ('Connection aborted.', error(10061, ''))
+Traceback (most recent call last):
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 48, in <module>
+    iermu_stat(limit)
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 14, in iermu_stat
+    data = requests.get(url,params={"limit": limit})
+  File "C:\Python27\lib\site-packages\requests\api.py", line 69, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(10061, ''))
+2018-11-04 10:16:54,611 - ERROR : ('Connection aborted.', error(10061, ''))
+Traceback (most recent call last):
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 48, in <module>
+    iermu_stat(limit)
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 14, in iermu_stat
+    data = requests.get(url,params={"limit": limit})
+  File "C:\Python27\lib\site-packages\requests\api.py", line 69, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(10061, ''))
+2018-11-04 14:19:30,069 - ERROR : ('Connection aborted.', error(10061, ''))
+Traceback (most recent call last):
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 48, in <module>
+    iermu_stat(limit)
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 14, in iermu_stat
+    data = requests.get(url,params={"limit": limit})
+  File "C:\Python27\lib\site-packages\requests\api.py", line 69, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(10061, ''))
+2018-11-04 14:19:34,746 - ERROR : ('Connection aborted.', error(10061, ''))
+Traceback (most recent call last):
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 48, in <module>
+    iermu_stat(limit)
+  File "D:/antelope/git/scripts/tools/IermuStats/server/iermu.py", line 14, in iermu_stat
+    data = requests.get(url,params={"limit": limit})
+  File "C:\Python27\lib\site-packages\requests\api.py", line 69, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\api.py", line 50, in request
+    response = session.request(method=method, url=url, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 465, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Python27\lib\site-packages\requests\sessions.py", line 573, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Python27\lib\site-packages\requests\adapters.py", line 415, in send
+    raise ConnectionError(err, request=request)
+ConnectionError: ('Connection aborted.', error(10061, ''))

@@ -1,0 +1,3 @@
+config:
+  codproducer:
+    conf_dir: '/opt/codproducer/etc'

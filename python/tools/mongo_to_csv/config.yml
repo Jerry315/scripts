@@ -1,0 +1,57 @@
+config:
+  mongodb:
+    url: 'mongodb://mawar:GCW0l90V7p8Bo9Lc3X2C2WzJE@2.mongodb.private:27017/?authSource=mawar&authMechanism=SCRAM-SHA-1'
+    db: 'mawar'
+  fields:
+    group_id: 1
+    status: 1
+    app_id: 1
+    name: 1
+    uid: 1
+    osd: 1
+    is_bind: 1
+    type: 1
+    video: 1
+    brand: 1
+    alias_brand: 1
+    bitrate: 1
+    bitlevel: 1
+    model: 1
+    alias_model: 1
+    storage: 1
+    pic_storage: 1
+    mage_invert: 1
+    alarm: 1
+    alarm_interval: 1
+    alarm_count: 1
+    alarm_zone: 1
+    with_platform: 1
+    video_quality: 1
+    project: 1
+    geo: 1
+    status_light: 1
+    nightmode: 1
+    contact: 1
+    signature: 1
+    resolution: 1
+    reported_conf: 1
+    config: 1
+    place,detect_type: 1
+    min_face_size_width: 1
+    min_face_size_heigh: 1
+    min_face_size_type: 1
+    face_detect_confidence_level: 1
+    ys_upload_face_coordinate: 1
+    framerate: 1
+    exposemode: 1
+    ai_face_ori: 1
+    ai_type: 1
+    ai_face_frame: 1
+    ai_face_position: 1
+    ai_face_pps: 1
+    pic_server_address: 1
+    created: 1
+    updated: 1
+    software_version : 1
+    software_build: 1
+    firmware: 1

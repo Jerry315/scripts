@@ -1,0 +1,4 @@
+prettytable==0.7.2
+PyYAML==3.13
+requests==2.19.1
+psutil==5.4.8

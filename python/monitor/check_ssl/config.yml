@@ -1,0 +1,80 @@
+config:
+  expire: 60
+  project:
+    public:
+      urls:
+        -
+          url: api.topvdn.com
+          hosts:
+            -
+              ip: 223.202.103.136
+              port: 443
+            -
+              ip: 223.202.103.142
+              port: 443
+            -
+              ip: 223.202.103.143
+              port: 443
+        -
+          url: console.topvdn.com
+          hosts:
+            -
+              ip: 223.202.103.148
+              port: 443
+            -
+              ip: 223.202.103.150
+              port: 443
+        -
+          url: zone3.topvdn.com
+          hosts:
+            -
+              ip: 122.226.181.18
+              port: 443
+            -
+              ip: 122.226.181.19
+              port: 443
+            -
+              ip: 122.226.181.20
+              port: 443
+        -
+          url: oss3.topvdn.com
+          hosts:
+            -
+              ip: 183.134.31.84
+              port: 443
+            -
+              ip: 183.134.31.85
+              port: 443
+            -
+              ip: 183.134.31.86
+              port: 443
+        -
+          url: zone4.topvdn.com
+          hosts:
+            -
+              ip: 61.55.189.133
+              port: 443
+            -
+              ip: 61.55.189.134
+              port: 443
+            -
+              ip: 61.55.189.135
+              port: 443
+        -
+          url: oss4.topvdn.com
+          hosts:
+            -
+              ip: 61.55.189.142
+              port: 443
+            -
+              ip: 61.55.189.143
+              port: 443
+            -
+              ip: 61.55.189.151
+              port: 443
+        -
+          url: osstest.topvdn.com
+          hosts:
+            -
+              ip: 223.202.132.189
+              port: 443

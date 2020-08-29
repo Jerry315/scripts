@@ -1,0 +1,1 @@
+camera_stat_agent: gunicorn -w 3 -b 127.0.0.1:5000 manager:app --reload -t 500 --access-logfile log/gunicorn.log

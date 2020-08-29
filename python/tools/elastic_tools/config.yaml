@@ -1,0 +1,46 @@
+elastic:
+  timeout: 15
+  url: http://192.168.2.82:9200
+  max_snapshot_bytes_per_sec: '50mb'
+  max_restore_bytes_per_sec:  '100mb'
+  indexs:
+    snapshot:
+      - index:
+        -
+          elastic-test-
+        enable: 1
+        delay_days: 1
+        date_fmt: "y.m.d"
+      - index:
+        -
+        enable: 0
+        delay_days:
+        date_fmt: "y.m.d"
+    delete:
+      - index:
+        -
+          elastic-test-
+        enable: 1
+        delay_days: 1
+        date_fmt: "y.m.d"
+      - index:
+        -
+        enable: 0
+        delay_days:
+        date_fmt: "y.m.d"
+    setting:
+      - index:
+        -
+          elastic-test-
+        enable: 1
+        delay_days: 1
+        date_fmt: "y.m.d"
+        tag: test
+      - index:
+        -
+        enable: 0
+        delay_days:
+        date_fmt: "y.m.d"
+        tag:
+
+

@@ -1,0 +1,5 @@
+config:
+  codisktracker:
+    mointor_url: 'http://codisktracker.private:8201/console/get_monitor_info'
+    group_info_url: 'http://codisktracker.private:8201/console/group_info'
+  disk_type: 2

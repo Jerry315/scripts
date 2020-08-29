@@ -1,0 +1,30 @@
+config:
+  mongodb:
+    devices:
+      url: mongodb://devices:xxxxx@monghost:27017/?authSource=devices&authMechanism=SCRAM-SHA-1
+      db: devices
+      table: devices_camera
+      fields:
+        "_id": 1
+        "sn": 1
+        "name": 1
+        "brand": 1
+        "model": 1
+    mawarapp:
+      db: mawarapp
+      fields:
+        "_id": 1
+        "group": 1
+        "is_bind": 1
+      table: mawarapp_camera
+      url: mongodb://mawarapp:xxxxx@monghost:27017/?authSource=mawarapp&authMechanism=SCRAM-SHA-1
+    camera:
+      url: mongodb://camera:xxxxx@monghost:27017/?authSource=camera&authMechanism=SCRAM-SHA-1
+      db: camera
+      table: device
+      fields:
+        "_id": 1
+        "message_timestamp": 1
+        "push_state": 1
+  host: 127.0.0.1
+  port: 9595

@@ -1,0 +1,25 @@
+thread: 10
+log:
+  name: mutil_log
+log_type:
+  - logrotate
+  - startup
+  - shutdown
+log_level:
+  - DEBUG
+  - INFO
+  - WARN
+  - ERROR
+ip:
+  - 1.1.1.1
+  - 1.1.1.2
+  - 2.2.2.1
+  - 2.2.2.3
+  - 192.168.100.152
+  - 202.96.134.33
+str:
+  - "Responsibility."
+  - "Whatever"
+  - "Happiness"
+  - "Always"
+  - "Hard"

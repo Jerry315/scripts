@@ -1,0 +1,46 @@
+wechat:
+  corpid: ww4c23533bc40cf02f
+  token_url: https://qyapi.weixin.qq.com/cgi-bin/gettoken
+  send_url: https://qyapi.weixin.qq.com/cgi-bin/message/send
+redis:
+  host: 192.168.2.73
+  passwd: 123456
+  port: 6800
+  db: 4
+smtp:
+  subject: xxxxx
+  user: xxxxx@topvdn.com
+  passwd: xxxxxx!
+  smtp_server: xxxx.topvdn.com
+  receivers:
+    - xxxxx@topvdn.com
+alert:
+  Warning:
+    toparty: 6|7
+    agentid: 15
+    wechat_corpsecret: xxxx
+    P: P4
+  Average:
+    toparty: 6|7
+    agentid: 20
+    wechat_corpsecret: xxxx
+    P: P3
+  High:
+    toparty: 2
+    agentid: 1
+    wechat_corpsecret: xxxx
+    P: P2
+  Disaster:
+    toparty: 2
+    agentid: 11
+    wechat_corpsecret: xxxx
+    P: P1
+  Other:
+    toparty: 6|7
+    agentid: 15
+    wechat_corpsecret: xxxx
+    P: P4
+log_dir: /tmp/sendwechat
+record_file_dir: /tmp/sendwechat/dial
+alert_url: http://42.51.12.155:8008/
+

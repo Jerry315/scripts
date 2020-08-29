@@ -1,0 +1,4 @@
+config:
+  codisktracker:
+    codisktracker_url: 'http://codisktracker.private:8201'
+  limit: 86400

@@ -1,0 +1,4 @@
+config:
+  redis:
+    password: cc
+    db: 0

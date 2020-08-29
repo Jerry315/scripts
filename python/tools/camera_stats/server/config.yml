@@ -1,0 +1,27 @@
+config:
+  mongodb:
+    url: 'mongodb://report:aFsuzppGDNHLTZt7CGyhkQGyz@192.168.2.72:27017/?authSource=report&authMechanism=SCRAM-SHA-1'
+    db: 'report'
+  cid_info_url: 'http://218.95.36.38:5000/camera/stats/v1/cid_info'
+  device_info_url: 'http://218.95.36.38:5000/camera/stats/v1/device_info'
+  timeout: 350000
+  step: 1000
+  pool_size: 100
+  username: "jerry"
+  password: 123456
+  is_bind: true
+  smtp:
+    subject: 【数据统计】摄像机在线率统计报表
+    user: '710899905@qq.com'
+    passwd: 'htexkmvrvdzlbchi'
+    smtp_server: 'smtp.qq.com'
+    receivers:
+      - 'zhanlin@antelope.cloud'
+  alert:
+    smtp:
+      subject: 【数据统计】摄像机在线率统计报表--异常
+      user: '710899905@qq.com'
+      passwd: 'htexkmvrvdzlbchi'
+      smtp_server: 'smtp.qq.com'
+      receivers:
+        - 'zhanlin@antelope.cloud'

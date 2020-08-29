@@ -1,0 +1,12 @@
+httpbasicauth:
+  username: ''
+  password: ''
+
+project_url:
+  stat_url: 'http://127.0.0.1/stat'
+  api_url: 'http://api.nginx.private'
+  oss_url: 'https://dgdx-oss1.antelopecloud.cn'
+  tokern_url: 'http://api.nginx.private/internal/devices/token?cid='
+
+log_dir:
+  log_dir: '/opt/sa_tools/scripts/py/health_check/log'

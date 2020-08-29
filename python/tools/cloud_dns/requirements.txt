@@ -1,0 +1,7 @@
+aliyun-python-sdk-core==2.13.2
+aliyun-python-sdk-domain==3.12.1
+aliyun-python-sdk-httpdns==2.1.0
+Click==7.0
+PyYAML==3.13
+xlrd==1.2.0
+

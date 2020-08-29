@@ -1,0 +1,21 @@
+ops_crontab:
+  oss:
+    codisktracker:
+      url: 'http://codisktracker.private:8201/console/group_info'
+      access_log: 'codisktracker.report.access.log'
+      error_log: 'codisktracker.report.error.log'
+  mawar:
+    url: 'http://mawar.private:9697'
+    access_log: 'mawar.report.access.log'
+    error_log: 'mawar.report.error.log'
+  relay:
+    url: 'http://127.0.0.1/info'
+    access_log: 'relay.report.access.log'
+    error_log: 'relay.report.error.log'
+  cigweb:
+    url: 'https://jxsr-cig.antelopecloud.cn'
+    app_id: 'fxqc'
+    app_secret: 'zix6u1596r7ae28dle12b30hh5qc142e'
+    access_log: 'cigweb.report.access.log'
+    error_log: 'cigweb.report.error.log'
+  log_dir: 'logs'

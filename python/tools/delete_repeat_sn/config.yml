@@ -1,0 +1,44 @@
+config:
+  mongodb:
+    url: 'mongodb://mawar:xxxxxxxxx@2.mongodb.private:27017/?authSource=mawar&authMechanism=SCRAM-SHA-1'
+    db: 'mawar'
+  repeat:
+    -
+      sn: '167898519003'
+      cid: ''
+    -
+      sn: '137898531099'
+      cid: 538771733
+    -
+      sn: '15258380'
+      cid: ''
+    -
+      sn: '137898586299'
+      cid: 538771753
+    -
+      sn: '137898620843'
+      cid: ''
+    -
+      sn: '137898533195'
+      cid: 538771827
+    -
+      sn: '18560152'
+      cid: ''
+    -
+      sn: '137898591003'
+      cid: 538771764
+    -
+      sn: '137898588219'
+      cid: 538771744
+    -
+      sn: '137898540699'
+      cid: ''
+    -
+      sn: '137898588027'
+      cid: 538771725
+    -
+      sn: '137898626763'
+      cid: 538771749
+    -
+      sn: '137898520139'
+      cid: ''

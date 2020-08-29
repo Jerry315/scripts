@@ -1,0 +1,28 @@
+config:
+  relay:
+    urls:
+      - http://127.0.0.1/stat
+  auth:
+    auth_user: xxxxxx
+    auth_pwd: xxxxxx
+  checkserver:
+    url: http://127.0.0.1:7061/stat/timeout_cids
+    timeout: 43200
+  step: 100
+  smtp:
+    user: xxxxx@topvdn.com
+    passwd: xxxxxx
+    smtp_server: smtp.topvdn.com
+    receivers:
+      - zhanlin@antelope.cloud
+  white_list:
+    -
+  checkmode:
+    0:
+      subject: '【每日巡检】 【南昌智慧云眼】cid超过12个小时未上传图片'
+      ignore_url:
+        -
+    1:
+      subject: '【每日巡检】 【南昌智慧云眼】cid超过12个小时未推流'
+      ignore_url:
+        -

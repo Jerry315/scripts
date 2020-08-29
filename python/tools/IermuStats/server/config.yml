@@ -1,0 +1,12 @@
+config:
+  stat_url:
+    - http://127.0.0.1:5000/v1/iermu/stats
+    - http://127.0.0.1:5000/v1/iermu/stats
+  limit: 30
+  smtp:
+    subject: 【数据统计】爱耳目事件报警条数统计
+    user: xxxxx@topvdn.com
+    passwd: xxxxxx!
+    smtp_server: xxxx.topvdn.com
+    receivers:
+      - xxxxx@topvdn.com

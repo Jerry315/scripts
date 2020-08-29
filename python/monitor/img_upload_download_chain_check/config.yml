@@ -1,0 +1,14 @@
+config:
+  api_url: 'https://jxsr-api.antelopecloud.cn'
+  oss_url: 'https://jxsr-oss1.antelopecloud.cn'
+  cid: 538452882
+  sn: JXSRDX-OPS-Monitor-0001
+  app_id: odko
+  app_key: 90fb7d4d094b883ac64413d802f61359
+  expiretype: 2
+#  api_url: 'https://ahwhdx-api.zhihuiyunyan.cn'
+#  oss_url: 'https://ahwhdx-oss1.zhihuiyunyan.cn'
+#  cid: 539952461
+#  sn: AHWH-OPS-Monitor-001
+#  app_id: tcml
+#  app_key: b6f4c02ad88ebd6e5856b4378d7bd972

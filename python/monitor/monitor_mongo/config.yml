@@ -1,0 +1,10 @@
+config:
+  mongodb:
+    instance:
+      27017:
+        url: 'mongodb://report:aFsuzppGDNHLTZt7CGyhkQGyz@192.168.2.72:27017/?authSource=report&authMechanism=SCRAM-SHA-1'
+        db: 'report'
+      27117:
+        url: 'mongodb://report:aFsuzppGDNHLTZt7CGyhkQGyz@192.168.2.72:27017/?authSource=report&authMechanism=SCRAM-SHA-1'
+        db: 'report'
+  timeout: 1
