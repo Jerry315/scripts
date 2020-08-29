@@ -1,0 +1,6 @@
+codisktracker_url: 'http://codisktracker.private:8201'
+limit: 86400
+log:
+  level: info
+  Path: ""
+  Filename: "diskGroupInfo.log"

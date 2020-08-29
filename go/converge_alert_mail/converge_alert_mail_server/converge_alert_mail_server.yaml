@@ -1,0 +1,36 @@
+bind: 127.0.0.1
+port: 5050
+deviceCycle:
+  name: deviceCycle
+  template: deviceCycle
+  subject: 存储周期每日全量检测
+deviceTimeOut:
+  name: deviceTimeOut
+  template: deviceTimeOut
+  subject: cid超过24个小时未上传图片和推流
+limit: 10
+log:
+  exfile: cid.xlsx
+  expire: 7
+  format: json
+  layout: 20060102
+  level: info
+  name: converge_alert_mail_server.log
+  path: log
+mail:
+  recive:
+    admin:
+      - zhanlin@antelope.cloud
+    normal:
+      - zhanlin@antelope.cloud
+  send:
+    from: xxxxx@topvdn.com
+    password: xxxxxx
+    server: smtp.mxhichina.com
+    username: xxxxx@topvdn.com
+mongodb:
+  db: report
+  table: device
+  url: mongodb://report:xxxxx@monghost:27017/?authSource=report&authMechanism=SCRAM-SHA-1
+secretid: jerry
+secretkey: 123456

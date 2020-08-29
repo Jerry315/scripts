@@ -1,0 +1,74 @@
+{{define "deviceCycle"}}
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Title</title>
+        <style type="text/css">
+            table.gridtable {
+                font-family: verdana, arial, sans-serif;
+                font-size: 18px;
+                color: #333333;
+                border-width: 1px;
+                border-color: #666666;
+                border-collapse: collapse;
+            }
+
+            table.gridtable th {
+                border-width: 1px;
+                padding: 8px;
+                border-style: solid;
+                border-color: #666666;
+                background-color: #dedede;
+            }
+
+            table.gridtable td {
+                border-width: 1px;
+                padding: 8px;
+                border-style: solid;
+                border-color: #666666;
+                background-color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+    <div>
+        <h2>汇总信息</h2>
+        {{range .ReportData}}
+            <p style="font-size: 14px">{{GetCycleSummaryInfo .Zname .VideoNum .PicNum}}</p>
+        {{end}}
+        <h2 style="display: {{IsDisplay .ReportData}}">详细信息</h2>
+        {{ range .ReportData }}
+            {{if len .Data}}
+                <h3>{{.Zname}}</h3>
+                <table class="gridtable">
+                    <thead>
+                    <tr>
+                        <th>CID</th>
+                        <th>通配视频周期</th>
+                        <th>对象存储视频周期</th>
+                        <th>通配图片周期</th>
+                        <th>对象存储图片周期</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{range .Data}}
+                        <tr>
+                            <td>{{.CID}}</td>
+                            <td>{{.MVideo}}</td>
+                            <td>{{.OVideo}}</td>
+                            <td>{{.MPIC}}</td>
+                            <td>{{.OPIC}}</td>
+                        </tr>
+                    {{end}}
+                    </tbody>
+                </table>
+            {{end}}
+        {{end}}
+    </div>
+    </body>
+    </html>
+{{end}}

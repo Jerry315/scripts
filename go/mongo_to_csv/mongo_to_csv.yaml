@@ -1,0 +1,18 @@
+url: "mongodb://mawar:Fk97hsLc5BOy9tWQ3VYFIGrA@192.168.2.83:27017/?authSource=mawar&authMechanism=SCRAM-SHA-1"
+db: "mawar"
+log:
+  level: "info"
+  path: ""
+  filename: "monitor_mongo.log"
+fields:
+    - "group_id"
+    - "sn"
+    - "status"
+    - "app_id"
+    - "name"
+    - "uid"
+    - "osd"
+    - "is_bind"
+    - "type"
+    - "video"
+    - "brand"

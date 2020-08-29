@@ -1,0 +1,19 @@
+dirs:
+  - cycle: 30
+    dir: "/opt/report/logs"
+    recursion: false
+    suffix:
+      - gz
+whitelist:
+  - /
+  - /etc
+  - /home
+  - /bin
+  - /sbin
+  - /var
+  - /usr
+  - /usr/local
+log:
+  fileName: "cron_rm_log.log"
+  level: info
+  path: ""

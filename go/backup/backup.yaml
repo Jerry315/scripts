@@ -1,0 +1,29 @@
+layout: "20060102"
+expire: 30
+files:
+  - /showdoc_data/html/Sqlite/showdoc.db.php
+dirs:
+  -
+    dir: /showdoc_data/html/Public/Uploads
+    cmd:
+      - "tar -zcvf Uploads-`date +%Y%m%d.tar.gz` -C /showdoc_data/html/Public Uploads"
+  -
+    dir: /opt/atlassian/data
+    cmd:
+      - "tar --exclude confluence/backups --exclude jira/export -zcvf atlassian-`date +%Y%m%d`.tar.gz -C /opt/atlassian/ data"
+      - "split -b 200M -d -a 1 atlassian-`date +%Y%m%d`.tar.gz atlassian-`date +%Y%m%d`.tar.gz"
+      - "rm  atlassian-`date +%Y%m%d`.tar.gz"
+dbs:
+  -
+    host: 192.168.2.210
+    port: 3306
+    username: jira
+    password: jira
+    database: jira
+  -
+    host: 192.168.2.210
+    port: 3306
+    username: confluence
+    password: confluence
+    database: confluence
+backup: /public/backup

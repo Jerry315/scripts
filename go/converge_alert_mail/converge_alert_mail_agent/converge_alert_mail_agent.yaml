@@ -1,0 +1,59 @@
+limit:
+  message_timestamp: 350000
+  step: 2000
+  timeout: 2
+log:
+  filename: converge_alert_mail_agent.log
+  format: json
+  level: info
+  layout: 20060102
+  path: log
+  cycleFile: cycleFile
+  timeOutFile: timeOutFile
+  expire: 7
+mongodb:
+  camera:
+    db: camera
+    fields:
+      - _id
+      - message_timestamp
+      - push_state
+    table: device
+    url: mongodb://camera:xxxxx@monghost:27017/?authSource=camera&authMechanism=SCRAM-SHA-1
+  devices:
+    db: devices
+    fields:
+      - _id
+      - storage
+      - pic_storage
+      - sn
+      - name
+      - brand
+      - model
+      - software_version
+      - software_build
+    table: devices_camera
+    url: mongodb://devices:xxxxx@monghost:27017/?authSource=devices&authMechanism=SCRAM-SHA-1
+  mawarapp:
+    db: mawarapp
+    fields:
+      - _id
+      - group
+    table: mawarapp_camera
+    url: mongodb://mawarapp:xxxxx@monghost:27017/?authSource=mawarapp&authMechanism=SCRAM-SHA-1
+checkServer: http://127.0.0.1:7061
+whitelist:
+  all: null
+  picture: null
+  video: null
+  relay:
+relay:
+  urls: null
+  username: ""
+  password: ""
+timeout: 86400
+project: dgdx
+zname: 东莞云
+secretid: topvdn
+secretkey: YqaGYWxXooYC5mRpdKx8PURw
+server: http://127.0.0.1:1212

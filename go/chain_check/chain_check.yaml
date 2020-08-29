@@ -1,0 +1,11 @@
+appId: "inko"
+appKey: "3cd995d6a01e2b6e9f3ba5f35a2662fc"
+apiUrl: "https://dgdx-api.antelopecloud.cn"
+ossUrl: "https://dgdx-oss1.antelopecloud.cn"
+cid: 539099876
+sn: "DGDX-OPS-Monitor-0001"
+expireType: 2
+log:
+  level: "info"
+  path: ""
+  fileName: "chain_check.log"

@@ -1,0 +1,21 @@
+httpbasicauth:
+  stat:
+    username: ''
+    password: ''
+  api:
+    username: ''
+    password: ''
+urls:
+  relay: 'http://218.95.36.19/stat'
+  api: 'http://api.nginx.private'
+  oss: 'https://dgdx-oss1.antelopecloud.cn'
+log:
+  level: info
+  path: ""
+  filename: "health_check.log"
+  format: json
+ignorecid:
+  - 538456700
+  - 538456697
+  - 538456695
+  - 538456696

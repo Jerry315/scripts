@@ -1,0 +1,64 @@
+limit:
+  cid_num: 16
+  message_timestamp: 350000 # 纳秒
+  step: 2000 # 全量查询时每次传多少个cid
+  timeout: 2 # 分钟
+log:
+  exfile: cid.xlsx
+  filename: check_storage_cycle.log
+  format: json
+  level: info
+  path: log
+mail:
+  enable: true
+  recive:
+    admin:
+      - zhanlin@antelope.cloud
+    normal:
+      - zhanlin@antelope.cloud
+  send:
+    from: xxxxx@topvdn.com
+    password: xxxxxx
+    server: smtp.mxhichina.com # 公司邮箱配置smtp使用这个，不需要调整
+    subject: 【存储周期每日全量检测】 南昌云
+    username: xxxxx@topvdn.com
+mongodb:
+  camera:
+    db: camera
+    fields:
+      - _id
+      - message_timestamp
+      - push_state
+    table: device
+    url: mongodb://camera:xxxxx@monghost:27017/?authSource=camera&authMechanism=SCRAM-SHA-1
+  devices:
+    db: devices
+    fields:
+      - _id
+      - storage
+      - pic_storage
+      - sn
+      - name
+      - brand
+      - model
+      - software_version
+      - software_build
+    table: devices_camera
+    url: mongodb://devices:xxxxx@monghost:27017/?authSource=devices&authMechanism=SCRAM-SHA-1
+  mawarapp:
+    db: mawarapp
+    fields:
+      - _id
+      - group
+    table: mawarapp_camera
+    url: mongodb://mawarapp:xxxxx@monghost:27017/?authSource=mawarapp&authMechanism=SCRAM-SHA-1
+url:
+  checkServer: http://127.0.0.1:7061
+  relay:
+    password: ''
+    url: http://127.0.0.1/stat
+    username: ''
+whitelist:
+  all: null
+  picture: null
+  video: null

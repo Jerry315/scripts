@@ -1,0 +1,17 @@
+mongodb:
+  mawar:
+    url: "mongodb://mawar:xxxxx@monghost:27017/?authSource=mawar&authMechanism=SCRAM-SHA-1"
+    db: "mawar"
+    table: "mawar_camera"
+    fields:
+      - "_id"
+url:
+  checkServer: "http://127.0.0.1:7061"
+monitorFile: "monitor_storage_cycle"
+step: 2000
+log:
+  level: "info"
+  path: "log"
+  filename: "check_storage_cycle.log"
+  format: "json"
+  cycle: 15

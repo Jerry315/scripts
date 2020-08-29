@@ -1,0 +1,9 @@
+aliyun:
+  ak: "xxx"
+  sid: "xxxx"
+  rid: "default"
+  endpoint: "alidns.aliyuncs.com"
+  fmt: "JSON"
+  version: "2015-01-09"
+  protocol: "https"
+  method: "POST"

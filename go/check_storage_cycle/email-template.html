@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        table.gridtable {
+            font-family: verdana,arial,sans-serif;
+            font-size:18px;
+            color:#333333;
+            border-width: 1px;
+            border-color: #666666;
+            border-collapse: collapse;
+        }
+        table.gridtable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #dedede;
+        }
+        table.gridtable td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table class="gridtable">
+            <thead>
+            <tr>
+                <th>CID</th>
+                <th>通配视频周期</th>
+                <th>对象存储视频周期</th>
+                <th>通配图片周期</th>
+                <th>对象存储图片周期</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{range .UnCids}}
+            <tr>
+                <td>{{.CID}}</td>
+                <td>{{.MVideo}}</td>
+                <td>{{.OVideo}}</td>
+                <td>{{.MPIC}}</td>
+                <td>{{.OPIC}}</td>
+            </tr>
+            {{end}}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

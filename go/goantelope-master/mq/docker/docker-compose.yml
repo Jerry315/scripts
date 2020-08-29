@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+    rmq1:
+        image: rabbitmq:3-management-alpine
+        hostname: rmq1
+        ports:
+            - "15672:15672"
+            - "5672:5672"
+        environment:
+            - RABBITMQ_ERLANG_COOKIE=cookie
+    rmq2:
+        image: rabbitmq:3-management-alpine
+        hostname: rmq2
+        ports:
+            - "15673:15672"
+            - "5673:5672"
+        depends_on:
+            - rmq1
+        environment:
+            - RABBITMQ_ERLANG_COOKIE=cookie
+        volumes:
+            - ./cluster-entrypoint.sh:/usr/local/bin/cluster-entrypoint.sh
+        entrypoint: /usr/local/bin/cluster-entrypoint.sh
+    rmq3:
+        image: rabbitmq:3-management-alpine
+        hostname: rmq3
+        ports:
+            - "15674:15672"
+            - "5674:5672"
+        depends_on:
+            - rmq1
+        environment:
+            - RABBITMQ_ERLANG_COOKIE=cookie
+        volumes:
+            - ./cluster-entrypoint.sh:/usr/local/bin/cluster-entrypoint.sh
+        entrypoint: /usr/local/bin/cluster-entrypoint.sh

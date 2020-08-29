@@ -1,0 +1,8 @@
+instance:
+  - address: 192.168.2.165:6379
+    password: ""
+    db: 2
+log:
+  level: "info"
+  path: ""
+  fileName: "monitor_redis.log"

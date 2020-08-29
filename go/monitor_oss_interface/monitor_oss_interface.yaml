@@ -1,0 +1,18 @@
+appKey: "3cd995d6a01e2b6e9f3ba5f35a2662fc"
+apiUrl: "https://ahwhdx-api.zhihuiyunyan.cn"
+ossUrl: "https://ahwhdx-oss1.zhihuiyunyan.cn"
+rtmpUrl: "rtmp://192.168.2.76:1935/live"
+timeout: 15
+retry: 3
+video:
+  - cycle: 1
+    cid:
+  - cycle: 2
+    cid:
+picture:
+  - cycle: 2
+    cid:
+log:
+  level: "info"
+  path: "log"
+  fileName: "monitor_oss_interface.log"

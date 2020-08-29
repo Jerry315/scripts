@@ -1,0 +1,14 @@
+bind: "127.0.0.1:8080"
+from: xxxxx@topvdn.com
+log:
+  filename: mail_api.log
+  format: json
+  level: info
+  path: log
+receiver:
+  - zhanlin@antelope.cloud
+smtp:
+  password: xxxxxx
+  server: smtp.mxhichina.com
+  username: xxxxx@topvdn.com
+subject: xxxxxxxxx

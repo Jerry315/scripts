@@ -1,0 +1,27 @@
+timeout: 15
+esUrl: "http://192.168.2.82:9200"
+maxSnapshotBytesPerSec: "50mb"
+maxRestoreBytesPerSec: "100mb"
+snapshot:
+  - index:
+      - elastic-test-
+    enable: true
+    delayDays: 1
+    dateFmt: "20060102"
+delete:
+  - index:
+      - elastic-test-
+    enable: false
+    delayDays: 1
+    dateFmt: "20060102"
+settings:
+  - index:
+      - elastic-test-
+    enable: false
+    delayDays: 1
+    dateFmt: "20060102"
+    tag:
+log:
+  level: info
+  path: ""
+  filename: "elastic_tools.log"

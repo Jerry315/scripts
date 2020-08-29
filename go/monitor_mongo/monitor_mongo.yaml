@@ -1,0 +1,8 @@
+instance:
+  - url: "mongodb://report:aFsuzppGDNHLTZt7CGyhkQGyz@192.168.2.72:27017/?authSource=report&authMechanism=SCRAM-SHA-1"
+    db: "report"
+    port: 27017
+log:
+  level: "info"
+  path: ""
+  fileName: "monitor_mongo.log"
